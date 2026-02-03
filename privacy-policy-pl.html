@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Polityka prywatności – AmpTemp Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Polityka prywatności aplikacji mobilnej AmpTemp Monitor.">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px 16px 48px;
+            background: #ffffff;
+        }
+        h1, h2 {
+            color: #111;
+        }
+        h1 {
+            font-size: 1.9rem;
+            margin-bottom: 0.4rem;
+        }
+        h2 {
+            margin-top: 1.8rem;
+            font-size: 1.3rem;
+        }
+        p {
+            margin: 0.4rem 0 0.8rem;
+        }
+        ul {
+            margin: 0.2rem 0 0.8rem 1.4rem;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.4rem;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #e5e5e5;
+            }
+            .container {
+                background: #181818;
+            }
+            h1, h2 {
+                color: #fff;
+            }
+            .meta {
+                color: #aaa;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Polityka prywatności aplikacji „AmpTemp Monitor”</h1>
+    <p class="meta">Ostatnia aktualizacja: <strong>[uzupełnij datę]</strong></p>
+
+    <h2>1. Postanowienia ogólne</h2>
+    <p>1.1. Niniejsza Polityka Prywatności określa zasady przetwarzania danych w aplikacji mobilnej <strong>„AmpTemp Monitor”</strong> (dalej: „Aplikacja”).</p>
+    <p>1.2. Administratorem Aplikacji jest <strong>[imię i nazwisko / nazwa wydawcy]</strong>, z siedzibą w <strong>[miasto, kraj]</strong>, adres e-mail kontaktowy: <strong>[adres e-mail]</strong>.</p>
+    <p>1.3. Aplikacja działa zgodnie z przepisami RODO / GDPR, CPRA oraz wytycznymi Google Play dotyczącymi bezpieczeństwa danych.</p>
+    <p>1.4. Aplikacja nie zbiera, nie przetwarza i nie udostępnia żadnych danych osobowych użytkowników.</p>
+
+    <h2>2. Zakres zbieranych danych</h2>
+    <p>2.1. Aplikacja <strong>nie zbiera żadnych danych osobowych</strong> w rozumieniu RODO, takich jak:</p>
+    <ul>
+        <li>imię i nazwisko,</li>
+        <li>adres e-mail,</li>
+        <li>numer telefonu,</li>
+        <li>lokalizacja GPS,</li>
+        <li>identyfikatory kont,</li>
+        <li>dane kontaktowe,</li>
+        <li>dane marketingowe,</li>
+        <li>dane biometryczne.</li>
+    </ul>
+    <p>2.2. Aplikacja przetwarza wyłącznie <strong>techniczne dane urządzenia i baterii</strong>, niepowiązane z użytkownikiem, w celu realizacji funkcji Aplikacji. Są to:</p>
+    <ul>
+        <li>czas i data pomiaru,</li>
+        <li>natężenie prądu (µA),</li>
+        <li>temperatura baterii (°C),</li>
+        <li>napięcie baterii (mV),</li>
+        <li>poziom naładowania (%),</li>
+        <li>stan ładowania (ładowanie / rozładowywanie),</li>
+        <li>stan licznika ładunku (µAh) z kontrolera baterii.</li>
+    </ul>
+    <p>2.3. Dane te dotyczą wyłącznie urządzenia i jego baterii. Nie są one wykorzystywane do identyfikacji użytkownika.</p>
+
+    <h2>3. Cele przetwarzania danych</h2>
+    <p>3.1. Dane techniczne opisane w pkt 2 są wykorzystywane wyłącznie w celu:</p>
+    <ul>
+        <li>monitorowania parametrów pracy baterii w czasie rzeczywistym,</li>
+        <li>obliczania pojemności baterii,</li>
+        <li>prowadzenia historii testów i analizy statystyk,</li>
+        <li>umożliwienia eksportu logów do plików CSV i JSON na urządzeniu użytkownika.</li>
+    </ul>
+    <p>3.2. Dane nie są wykorzystywane do:</p>
+    <ul>
+        <li>profilowania użytkowników,</li>
+        <li>celów marketingowych,</li>
+        <li>analizy zachowań użytkowników,</li>
+        <li>udostępniania podmiotom trzecim.</li>
+    </ul>
+
+    <h2>4. Miejsce i sposób przechowywania danych</h2>
+    <p>4.1. Wszystkie dane techniczne są przechowywane <strong>wyłącznie lokalnie</strong> na urządzeniu użytkownika, w bazie danych SQLite należącej do Aplikacji.</p>
+    <p>4.2. Aplikacja <strong>nie przesyła żadnych danych</strong> do chmury, serwerów zewnętrznych, usług analitycznych ani reklamowych.</p>
+    <p>4.3. Dane nie opuszczają urządzenia użytkownika.</p>
+
+    <h2>5. Uprawnienia systemowe Aplikacji</h2>
+    <p>Aplikacja może korzystać z następujących uprawnień systemowych Android:</p>
+    <ul>
+        <li><strong>android.permission.BATTERY_STATS</strong> – odczyt niskopoziomowych danych baterii, niezbędnych do monitorowania parametrów.</li>
+        <li><strong>android.permission.FOREGROUND_SERVICE</strong> – umożliwia działanie usługi pierwszoplanowej podczas testów, aby system nie zakończył procesu.</li>
+        <li><strong>android.permission.POST_NOTIFICATIONS</strong> – wyświetlanie powiadomień o aktywnym monitorowaniu lub teście.</li>
+        <li><strong>android.permission.WAKE_LOCK</strong> – zapobiega usypianiu urządzenia podczas testów, aby zapewnić ciągłość pomiarów.</li>
+        <li><strong>android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</strong> – umożliwia wyłączenie optymalizacji baterii dla Aplikacji, aby system nie przerywał jej działania w tle.</li>
+    </ul>
+    <p>5.2. Uprawnienia są wykorzystywane wyłącznie w celu prawidłowego działania funkcji Aplikacji, zgodnie z jej opisem w Google Play.</p>
+
+    <h2>6. Widżety i praca w tle</h2>
+    <p>6.1. Aplikacja może działać w tle jako usługa pierwszoplanowa, wyświetlając powiadomienie o aktywnym monitorowaniu lub teście pojemności baterii.</p>
+    <p>6.2. Widżet ekranu prezentuje wyłącznie aktualne parametry techniczne baterii oraz postęp testu, korzystając z lokalnych danych urządzenia.</p>
+
+    <h2>7. Kontrola użytkownika nad danymi</h2>
+    <p>7.1. Użytkownik ma pełną kontrolę nad danymi technicznymi zapisanymi w Aplikacji.</p>
+    <p>7.2. Użytkownik może w dowolnym momencie usunąć pojedyncze wpisy lub całą historię testów.</p>
+    <p>7.3. Usunięcie danych z poziomu Aplikacji powoduje ich trwałe usunięcie z pamięci urządzenia.</p>
+
+    <h2>8. Dane zbierane przez Google Play</h2>
+    <p>8.1. Instalacja Aplikacji z Google Play może wiązać się z przetwarzaniem danych przez Google, takich jak:</p>
+    <ul>
+        <li>dane urządzenia,</li>
+        <li>statystyki instalacji,</li>
+        <li>dane o błędach aplikacji.</li>
+    </ul>
+    <p>Dane te są przetwarzane zgodnie z polityką prywatności Google.</p>
+    <p>8.2. Polityka prywatności Google jest dostępna pod adresem: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+    <h2>9. Bezpieczeństwo danych</h2>
+    <p>9.1. Dane techniczne są przechowywane w lokalnej bazie danych Aplikacji, do której dostęp ma wyłącznie Aplikacja.</p>
+    <p>9.2. Zaleca się stosowanie zabezpieczeń systemowych urządzenia (blokada ekranu, szyfrowanie pamięci), aby zapobiec nieuprawnionemu dostępowi osób trzecich.</p>
+    <p>9.3. Aplikacja nie wykorzystuje plików cookies ani żadnych technologii śledzących.</p>
+
+    <h2>10. Dzieci i osoby niepełnoletnie</h2>
+    <p>10.1. Aplikacja nie jest kierowana do dzieci.</p>
+    <p>10.2. Aplikacja nie zbiera żadnych danych osobowych, dlatego może być używana bez ryzyka naruszenia prywatności osób niepełnoletnich.</p>
+
+    <h2>11. Transfer danych poza UE / EOG</h2>
+    <p>11.1. Aplikacja nie przesyła żadnych danych poza urządzenie użytkownika, w tym poza UE/EOG.</p>
+    <p>11.2. Nie dochodzi do transferu danych do państw trzecich.</p>
+
+    <h2>12. Zmiany polityki prywatności</h2>
+    <p>12.1. Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności, jeśli będzie to konieczne z powodu rozwoju Aplikacji, zmian prawa lub wymagań Google Play.</p>
+    <p>12.2. Zaktualizowana wersja Polityki będzie publikowana pod tym samym adresem URL.</p>
+
+    <h2>13. Kontakt</h2>
+    <p>W sprawach związanych z Polityką Prywatności lub funkcjonowaniem Aplikacji można kontaktować się z Administratorem pod adresem e-mail: <strong>mwociak@gmail.com</strong></p>
+</div>
+</body>
+</html>
